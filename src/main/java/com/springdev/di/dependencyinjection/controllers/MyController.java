@@ -1,5 +1,6 @@
 package com.springdev.di.dependencyinjection.controllers;
 
+import com.springdev.di.dependencyinjection.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**
@@ -8,9 +9,15 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class MyController {
 
-    public String hello() {
-        System.out.println("Hello!!");
+    private GreetingService greetingService;
 
-        return "foo";
+    public MyController(GreetingService greetingService) {
+        this.greetingService = greetingService;
+    }
+
+    public String hello() {
+        System.out.println("Hello");
+
+        return greetingService.sayGreeting();
     }
 }

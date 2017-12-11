@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 public class PropertyInjectionController {
 
     //Trick the name of variable suggest the implementation class of interface
+    //But if we have the primaryBean, it will be used
     @Autowired
     public GreetingService greetingServiceImpl;
 
