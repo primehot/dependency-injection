@@ -1,15 +1,17 @@
 package com.springdev.di.dependencyinjection.controllers.manual.examples;
 
 import com.springdev.di.dependencyinjection.services.GreetingService;
+import org.springframework.stereotype.Service;
 
 /**
  * Created by oleht on 11.12.2017
  */
+@Service
 public class ConstructorInjectedController {
 
     private GreetingService greetingService;
 
-    String sayHello() {
+    public String sayHello() {
         return greetingService.sayGreeting();
     }
 
