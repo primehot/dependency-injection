@@ -1,6 +1,7 @@
 package com.springdev.di.dependencyinjection.controllers.manual.examples;
 
 import com.springdev.di.dependencyinjection.services.GreetingService;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**
@@ -15,7 +16,7 @@ public class ConstructorInjectedController {
         return greetingService.sayGreeting();
     }
 
-    public ConstructorInjectedController(GreetingService greetingService) {
+    public ConstructorInjectedController(@Qualifier("constructorGreetingService") GreetingService greetingService) {
         this.greetingService = greetingService;
     }
 }

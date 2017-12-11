@@ -11,14 +11,14 @@ import org.springframework.context.ApplicationContext;
 @SpringBootApplication
 public class DependencyInjectionApplication {
 
-	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
+    public static void main(String[] args) {
+        ApplicationContext ctx = SpringApplication.run(DependencyInjectionApplication.class, args);
 
-		MyController myControler = (MyController) ctx.getBean("myController");
-		myControler.hello();
+        MyController myControler = (MyController) ctx.getBean("myController");
+        myControler.hello();
 
-		System.out.println(ctx.getBean(PropertyInjectionController.class).sayHello());
-		System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
-		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
-	}
+        System.out.println(ctx.getBean(PropertyInjectionController.class).sayHello());
+        System.out.println(ctx.getBean(SetterInjectedController.class).sayHello());
+        System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+    }
 }
