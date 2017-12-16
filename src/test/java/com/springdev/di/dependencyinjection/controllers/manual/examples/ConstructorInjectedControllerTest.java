@@ -1,6 +1,6 @@
 package com.springdev.di.dependencyinjection.controllers.manual.examples;
 
-import com.springdev.di.dependencyinjection.services.GreetingServiceImpl;
+import com.springdev.di.exluded.services.GreetingServiceImpl;
 import org.junit.Before;
 import org.junit.Test;
 

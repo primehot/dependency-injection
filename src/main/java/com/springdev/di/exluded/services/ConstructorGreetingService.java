@@ -1,4 +1,4 @@
-package com.springdev.di.dependencyinjection.services;
+package com.springdev.di.exluded.services;
 
 import org.springframework.stereotype.Service;
 

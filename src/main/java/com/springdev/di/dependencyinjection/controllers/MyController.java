@@ -1,6 +1,6 @@
 package com.springdev.di.dependencyinjection.controllers;
 
-import com.springdev.di.dependencyinjection.services.GreetingService;
+import com.springdev.di.exluded.services.GreetingService;
 import org.springframework.stereotype.Controller;
 
 /**

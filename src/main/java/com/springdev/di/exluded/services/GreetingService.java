@@ -1,4 +1,4 @@
-package com.springdev.di.dependencyinjection.services;
+package com.springdev.di.exluded.services;
 
 /**
  * Created by oleht on 11.12.2017
